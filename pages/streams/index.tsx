@@ -4,7 +4,6 @@ import FloatingButton from "@components/floating-button";
 import Layout from "@components/layout";
 import {Stream} from "@prisma/client";
 import useSWR from "swr";
-import streams from "pages/api/streams";
 
 interface StreamResponse {
     ok: boolean;

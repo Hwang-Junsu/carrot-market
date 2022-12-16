@@ -5,10 +5,18 @@ interface ItemProps {
     id: number;
     price: number;
     comments: number;
+    image: string;
     hearts: number;
 }
 
-export default function Item({title, price, comments, hearts, id}: ItemProps) {
+export default function Item({
+    title,
+    price,
+    image,
+    comments,
+    hearts,
+    id,
+}: ItemProps) {
     return (
         <Link href={`/products/${id}`}>
             <a className="flex px-4 pt-5 cursor-pointer justify-between">
